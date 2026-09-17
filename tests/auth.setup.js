@@ -6,7 +6,7 @@ const AUTH_FILE = 'playwright/.auth/user.json';
 
 setup('Login to Portal', async ({ page }) => {
   const loginPage = new LoginPage(page);
-  await loginPage.goto();
+  await loginPage.goto(process.env.BASE_URL);
   await loginPage.login(process.env.PEGA_USERNAME, process.env.PEGA_PASSWORD);
 
   const workListPage = new WorkListPage(page);
