@@ -1,0 +1,7 @@
+{
+  "newCase": {
+    "caseType": "Sample Case Type",
+    "description": "Playwright automation test case",
+    "priority": "High"
+  }
+}
